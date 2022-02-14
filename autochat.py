@@ -49,12 +49,12 @@ def chat(chanel,authorization):
 
 
 if __name__ == "__main__":
-    chanel = ["890109633434361876"]  
-    authorization = ""#打开审查元素，network里面 header 里面的authorization复制到这 只需要改chanel和这个参数就可以了
+    chanel = [""]
+    authorization = ""
     while True:
         try:
             chat(chanel,authorization)
-            sleeptime = randoms.randrange(600, 1200) #发送间隔时间(秒)
+            sleeptime = random.randrange(600, 1200) #发送间隔时间(秒)
             time.sleep(sleeptime)
         except:
             break
